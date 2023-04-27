@@ -125,3 +125,8 @@ SELECT COUNT(*) FROM cliente WHERE idCliente % 2 = 0;
 SELECT COUNT(*) FROM agenda WHERE idAgenda % 2 = 0;
 SELECT COUNT(*) FROM cita WHERE idSede % 2 = 0;
 SELECT COUNT(*) FROM sede WHERE idSede % 2 = 0;
+-----------------------------------------
+SELECT cita.fechaCita,cita.horaCita,cliente.nombreCliente,cliente.apellidoCliente,agenda.fecha_inicio,agenda.fecha_final from cliente INNER JOIN sede ON cliente.telefonoCliente = sede.telefono inner join agenda  on  agenda.idAgenda = cita.idAgenda 
+where agenda.telefono=numi and estado='Activo'and estadoCita="activo" ;
+
+
