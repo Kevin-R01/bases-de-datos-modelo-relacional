@@ -121,4 +121,7 @@ SELECT * FROM agenda ORDER BY idAgenda DESC limit 5;
 SELECT * FROM cita ORDER BY idCita DESC limit 5;
 SELECT * FROM sede ORDER BY idSede DESC limit 5;
 ---------------------------------------------------------------------------
-select * from cita where idCita=268
+SELECT COUNT(*) FROM cliente WHERE idCliente % 2 = 0;
+SELECT COUNT(*) FROM agenda WHERE idAgenda % 2 = 0;
+SELECT COUNT(*) FROM cita WHERE idSede % 2 = 0;
+SELECT COUNT(*) FROM sede WHERE idSede % 2 = 0;
